@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 1452107504}
   - component: {fileID: 1452107508}
   - component: {fileID: 1452107509}
+  - component: {fileID: 1452107510}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -468,6 +469,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4c6150be18037944933038f340606ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1452107510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452107503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e263ddc829a5c49afb79414c193c77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &1858398324
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +493,7 @@ GameObject:
   - component: {fileID: 1858398327}
   - component: {fileID: 1858398326}
   - component: {fileID: 1858398325}
+  - component: {fileID: 1858398328}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -553,13 +568,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858398324}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.047957134, y: -0.9470375, z: 0.26856026, w: 0.16939743}
-  m_LocalPosition: {x: 2.372443, y: 9.947544, z: 20.257343}
+  m_LocalRotation: {x: 0.0016888719, y: -0.92648447, z: 0.3763065, w: 0.004152274}
+  m_LocalPosition: {x: 0.3306584, y: 9.691751, z: 16.056868}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1858398328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858398324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d901898b7d38a4b8aa411047eec43b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 1452107507}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
