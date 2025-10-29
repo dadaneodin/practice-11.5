@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerColeder : MonoBehaviour
+public class TriggerCollider : MonoBehaviour
 {
     public GameObject Canvas;
     void OnTriggerEnter(Collider other)
@@ -23,4 +23,3 @@ public class TriggerColeder : MonoBehaviour
         }
     }
 }
-

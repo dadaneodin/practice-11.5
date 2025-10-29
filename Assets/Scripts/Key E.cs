@@ -5,6 +5,8 @@ using UnityEngine;
 public class KeyE : MonoBehaviour
 {
     public bool ePressed;
+    public Animator animator;
+
     void Start()
     {
         
@@ -12,6 +14,13 @@ public class KeyE : MonoBehaviour
 
     void Update()
     {
-        ePressed = Input.GetKey(KeyCode.E);
+        ePressed = Input.GetKeyDown(KeyCode.E);
+        Debug.Log("KeyE::Update(); -- ePressed:" + ePressed);
+        if (ePressed == true)
+        {
+            animator.SetBool("ToOpen", !animator.GetBool("ToOpen"));
+            // animator.SetBool("ToOpen", true);
+        }
+        
     }
 }
