@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RedTileDeath : MonoBehaviour
+public class DeathZoneUnderLvl : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {

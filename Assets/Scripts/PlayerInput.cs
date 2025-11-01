@@ -25,7 +25,7 @@ namespace WildBall.Inputs
             float vertical = Input.GetAxis("Vertical");
             bool jump = Input.GetButtonDown(GlobalStingVars.JUMP_BUTTON);
 
-            movement = new Vector3(-horizontal, 0, -vertical).normalized;
+            movement = new Vector3(horizontal, 0, vertical).normalized;
             
             if (Input.GetButtonDown(GlobalStingVars.JUMP_BUTTON))
             {

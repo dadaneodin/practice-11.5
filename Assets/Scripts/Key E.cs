@@ -15,7 +15,7 @@ public class KeyE : MonoBehaviour
     void Update()
     {
         ePressed = Input.GetKeyDown(KeyCode.E);
-        Debug.Log("KeyE::Update(); -- ePressed:" + ePressed);
+        // Debug.Log("KeyE::Update(); -- ePressed:" + ePressed);
         if (ePressed == true)
         {
             animator.SetBool("ToOpen", !animator.GetBool("ToOpen"));
