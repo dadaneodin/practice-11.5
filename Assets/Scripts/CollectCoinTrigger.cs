@@ -7,16 +7,15 @@ public class CollectCoinTrigger : MonoBehaviour
 {
     public ParticleSystem particleSystema;
 
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-           particleSystema.Play();
+            particleSystema.Play();
             Destroy(gameObject, 1f);
         }
     }
-
-     
 
     void Start()
     {

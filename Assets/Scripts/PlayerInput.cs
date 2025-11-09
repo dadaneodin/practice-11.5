@@ -27,10 +27,10 @@ namespace WildBall.Inputs
 
             movement = new Vector3(horizontal, 0, vertical).normalized;
             
-            if (Input.GetButtonDown(GlobalStingVars.JUMP_BUTTON))
-            {
-                GetComponent<Rigidbody>().AddForce(Vector3.up * 5f, ForceMode.Impulse);
-            }
+            // if (Input.GetButtonDown(GlobalStingVars.JUMP_BUTTON))
+            // {
+            //     GetComponent<Rigidbody>().AddForce(Vector3.up * 5f, ForceMode.Impulse);
+            // }
             
             // Vector3 movement = new Vector3(horizontal, 0, vertical) * speed * Time.deltaTime;
             // transform.Translate(movement);

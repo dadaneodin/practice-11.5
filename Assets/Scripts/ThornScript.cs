@@ -5,11 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class ThornScript : MonoBehaviour
 {
-    public void OnCollisionEnter(Collision collision)
+
+    public GameObject player;
+    public ParticleSystem particleSystema;
+
+    void ReloadScene()
     {
+        SceneManager.LoadScene(0);
+    }
+
+
+    public void OnCollisionEnter(Collision collision)
+{
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(0);
+            // Получаем игрока из столкновения
+            GameObject player = collision.gameObject;
+            
+            player.SetActive(false);
+
+            particleSystema.Play();
+
+            // Debug.Log("SceneManager.LoadScene(0);");
+
+            Invoke("ReloadScene", 0.8f);
         }
-    }
+}
 }

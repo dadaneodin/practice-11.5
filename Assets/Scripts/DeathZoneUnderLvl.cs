@@ -5,11 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class DeathZoneUnderLvl : MonoBehaviour
 {
+    public GameObject player;
+    public ParticleSystem particleSystema;
+
+    void ReloadScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(0);
+            player.SetActive(false);
+
+            particleSystema.Play();
+
+            // Debug.Log("SceneManager.LoadScene(0);");
+
+            Invoke("ReloadScene", 0.8f);
         }
     }
 }
