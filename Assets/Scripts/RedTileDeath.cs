@@ -10,7 +10,9 @@ public class RedTileDeath : MonoBehaviour
 
     void ReloadScene()
     {
-        SceneManager.LoadScene(0);
+        // SceneManager.LoadScene(0);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
 
