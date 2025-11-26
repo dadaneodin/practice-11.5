@@ -7,6 +7,8 @@ using UnityEngine;
 public class FInishTrigger1 : MonoBehaviour
 {
     public GameObject ObjectToActivate;
+    public GameObject ObjectToActivate2;
+    private bool isPaused = false;
     // public void OnTriggerEnter(Collision other)
     // {
     //     if (other.gameObject.CompareTag("Player"))
@@ -20,6 +22,15 @@ public class FInishTrigger1 : MonoBehaviour
          if (other.gameObject.CompareTag("Player"))
         {
             ObjectToActivate.SetActive(true);
+            ObjectToActivate2.SetActive(true);
+            // TogglePause();
+
         }
+    }
+
+    public void TogglePause()
+    {
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0 : 1;
     }
 }
