@@ -5,13 +5,13 @@ public class PauseManager : MonoBehaviour
     public GameObject pausePanel;
     private bool isPaused = false;
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            TogglePause();
-        }
-    }
+    // void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Escape))
+    //     {
+    //         TogglePause();
+    //     }
+    // }
 
     public void TogglePause()
     {
