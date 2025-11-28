@@ -15,11 +15,11 @@ public class TriggerCollider : MonoBehaviour
 
     }
 
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Canvas.SetActive(false);
-        }
-    }
+    // void OnTriggerExit(Collider other)
+    // {
+    //     if (other.CompareTag("Player"))
+    //     {
+    //         Canvas.SetActive(false);
+    //     }
+    // }
 }

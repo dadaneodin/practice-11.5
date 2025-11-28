@@ -16,13 +16,20 @@ public class FInishTrigger1 : MonoBehaviour
     //         ObjectToActivate.SetActive(true);
     //     }
     // }
+
+    IEnumerator MyDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        TogglePause(); // или что там тебе надо
+    }
     
     void OnTriggerEnter(Collider other)
     {
-         if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             ObjectToActivate.SetActive(true);
             ObjectToActivate2.SetActive(true);
+            StartCoroutine(MyDelay(3f));
             // TogglePause();
 
         }

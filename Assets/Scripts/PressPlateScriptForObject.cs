@@ -6,19 +6,20 @@ using UnityEngine;
 public class PressPlateScriptForObject : MonoBehaviour
 {
     public GameObject ObjectToActivate;
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("TGGObject"))
-        {
-            ObjectToActivate.SetActive(true);
-        }
-    }
-
-    // public void OriggerEnter(Collider other)
+    
+    // public void OnCollisionEnter(Collision collision)
     // {
-    //     if (other.gameObject.CompareTag("TGGObject"))
+    //     if (collision.gameObject.CompareTag("TGGObject"))
     //     {
     //         ObjectToActivate.SetActive(true);
     //     }
     // }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("TGGObject"))
+        {
+            ObjectToActivate.SetActive(true);
+        }
+    }
 }

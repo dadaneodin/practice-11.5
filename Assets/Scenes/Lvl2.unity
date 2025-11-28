@@ -302,7 +302,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 957837266883091586, guid: 6efcc9344b21f6f4882cb37417f7b653, type: 3}
       propertyPath: jumpForce
-      value: 3
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 1806889887457950017, guid: 6efcc9344b21f6f4882cb37417f7b653, type: 3}
       propertyPath: m_LocalScale.x
