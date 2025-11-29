@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class TriggerCollider : MonoBehaviour
 {
-    public GameObject Canvas;
+    public GameObject GameObject;
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Canvas.SetActive(true);
+            GameObject.SetActive(true);
             
         }
 
     }
 
-    // void OnTriggerExit(Collider other)
-    // {
-    //     if (other.CompareTag("Player"))
-    //     {
-    //         Canvas.SetActive(false);
-    //     }
-    // }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            GameObject.SetActive(false);
+        }
+    }
 }

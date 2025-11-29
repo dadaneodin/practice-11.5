@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CanvasAboutGame : MonoBehaviour
 {
-    public GameObject Canvas;
+    public GameObject GameObject;
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Canvas.SetActive(true);
+            GameObject.SetActive(true);
             
         }
 
@@ -19,7 +19,7 @@ public class CanvasAboutGame : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Canvas.SetActive(false);
+            GameObject.SetActive(false);
         }
     }
 

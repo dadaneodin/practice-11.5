@@ -16,9 +16,8 @@ public class FinishTrigger : MonoBehaviour
 
             if (nextIndex >= totalScene)
                 nextIndex = 0;
-
             SceneManager.LoadScene(nextIndex);
-
+            Time.timeScale = 1f;
         }
     }
 }
