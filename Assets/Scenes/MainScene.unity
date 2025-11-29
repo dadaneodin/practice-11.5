@@ -316,18 +316,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2007591257010306396, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622394586051025943, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2622394586051025943, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 94cd9fdbe9c0db4479ab21e6791d2852, type: 3}
     - target: {fileID: 3692227391577363434, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -336,14 +324,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5589568956848663749, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5589568956848663749, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 94cd9fdbe9c0db4479ab21e6791d2852, type: 3}
     - target: {fileID: 5989088207540721061, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -424,14 +404,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6989348688573532654, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
-      propertyPath: m_Type
+    - target: {fileID: 6101744483390371901, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
+      propertyPath: m_fontSize
+      value: 50.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101744483390371901, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 69d9148d422a5f041aac770db00c6e18, type: 2}
+    - target: {fileID: 6101744483390371901, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101744483390371901, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1914113323636026445, guid: 69d9148d422a5f041aac770db00c6e18, type: 2}
+    - target: {fileID: 6101744483390371901, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6989348688573532654, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 94cd9fdbe9c0db4479ab21e6791d2852, type: 3}
+    - target: {fileID: 7204814764689964331, guid: 376cd5f0fda9da9458fd47f122ff2e45, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

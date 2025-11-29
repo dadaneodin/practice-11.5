@@ -5,7 +5,7 @@ using UnityEngine;
 public class CanvasOffAfterTime : MonoBehaviour
 {
 
-    private bool isPaused = false;
+    private bool isPause = false;
     IEnumerator MyDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -27,7 +27,7 @@ public class CanvasOffAfterTime : MonoBehaviour
 
     public void TogglePause()
     {
-        isPaused = !isPaused;
-        Time.timeScale = isPaused ? 0 : 1;
+        isPause = !isPause;
+        Time.timeScale = isPause ? 0 : 1;
     }
 }

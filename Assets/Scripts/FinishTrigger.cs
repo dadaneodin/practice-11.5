@@ -18,6 +18,7 @@ public class FinishTrigger : MonoBehaviour
                 nextIndex = 0;
 
             SceneManager.LoadScene(nextIndex);
+
         }
     }
 }

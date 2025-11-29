@@ -13,7 +13,7 @@ public class CollectCoinTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             particleSystema.Play();
-            Destroy(gameObject, 1f);
+            Destroy(gameObject, 0.2f);
         }
     }
 
