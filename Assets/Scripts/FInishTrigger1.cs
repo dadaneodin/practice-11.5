@@ -8,20 +8,18 @@ public class FInishTrigger1 : MonoBehaviour
 {
     public GameObject ObjectToActivate;
     public GameObject ObjectToActivate2;
-    private bool isPaused = false;
-    // public void OnTriggerEnter(Collision other)
-    // {
-    //     if (other.gameObject.CompareTag("Player"))
-    //     {
-    //         ObjectToActivate.SetActive(true);
-    //     }
-    // }
+    public MonoBehaviour targetScript;
+    public MonoBehaviour targetScript2;
+    // private bool isPaused = false;
 
-    IEnumerator MyDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        TogglePause(); // или что там тебе надо
-    }
+    
+
+
+    // IEnumerator MyDelay(float delay)
+    // {
+    //     yield return new WaitForSeconds(delay);
+    //     TogglePause(); // или что там тебе надо
+    // }
     
     void OnTriggerEnter(Collider other)
     {
@@ -29,15 +27,20 @@ public class FInishTrigger1 : MonoBehaviour
         {
             ObjectToActivate.SetActive(true);
             ObjectToActivate2.SetActive(true);
-            StartCoroutine(MyDelay(3f));
-            // TogglePause();
+            // StartCoroutine(MyDelay(3f));
+            // // TogglePause();
+            DesableScript();
 
         }
     }
-
-    public void TogglePause()
+    void DesableScript()
     {
-        isPaused = !isPaused;
-        Time.timeScale = isPaused ? 0 : 1;
+        targetScript.enabled = false;
+        targetScript2.enabled = false;
     }
+    // public void TogglePause()
+    // {
+    //     isPaused = !isPaused;
+    //     Time.timeScale = isPaused ? 0 : 1;
+    // }
 }
